@@ -1,0 +1,228 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container for overall layout */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.nhs-logo {
+    width: 80px; /* Adjust as needed */
+    height: auto;
+    margin-right: 15px;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Main Content Styling */
+h1 {
+    color: #005EB8; /* NHS Blue */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #005EB8;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+h3 {
+    color: #005EB8;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+h4 {
+    color: #005EB8;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fdfdfd;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+}
+
+ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #005EB8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Specific Section Styling */
+.top-tips .tip-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.tip-icon {
+    width: 40px; /* Size of tip icons */
+    height: auto;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #eef;
+    color: #005EB8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nhs-logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .tip-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tip-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    /* Data labels for responsive table */
+    td:nth-of-type(1):before { content: "Sources of protein:"; }
+    td:nth-of-type(2):before { content: "Sources of carbohydrates:"; }
+    td:nth-of-type(3):before { content: "Examples of bedtime snacks:"; }
+    td:nth-of-type(4):before { content: "Complication:"; }
+    td:nth-of-type(5):before { content: "Medication and how it works:"; }
+}

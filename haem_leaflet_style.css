@@ -1,0 +1,153 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container for overall layout */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+h1 {
+    color: #005EB8; /* NHS Blue */
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+h2 {
+    color: #005EB8;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+h3 {
+    color: #005EB8;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fdfdfd;
+}
+
+ul {
+    list-style-type: disc; /* Re-enable default bullet points for general lists */
+    margin-left: 20px;
+    padding: 0;
+}
+
+/* Specific list styling for tick/cross lists */
+.after-procedure-lists ul {
+    list-style-type: none; /* Remove bullet points for these specific lists */
+}
+
+.checklist-ul {
+    list-style-type: none; /* Remove bullet points for the appointment checklist */
+}
+
+li {
+    margin-bottom: 8px;
+    /* padding-left: 0; Removed as default bullet points are re-enabled for general lists */
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #005EB8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Image Styling */
+.content-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.list-icon {
+    width: 40px; /* Increased size for icons within lists */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.qr-code {
+    width: 100px; /* Specific size for QR codes */
+    height: auto;
+}
+
+/* Side-by-side layout for After the procedure... section */
+.after-procedure-lists {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-around;
+    gap: 20px; /* Space between columns */
+}
+
+.after-procedure-lists ul {
+    flex: 1; /* Allow lists to grow and shrink */
+    min-width: 280px; /* Minimum width before wrapping */
+}
+
+.section-icon {
+    display: block;
+    margin: 0 auto 10px auto; /* Center and add space below */
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .after-procedure-lists {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+}
